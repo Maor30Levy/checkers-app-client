@@ -1,0 +1,65 @@
+.game-room{
+    @extend %page;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.room__main{
+    display: grid;
+    grid-template-rows: 0.75fr 8fr 1.25fr;
+    height: 100%;
+}
+
+.messages{
+    background: $myLightBlue;
+    overflow:auto;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 820px) {
+    .game-room{
+        display: flex;
+        width: 100%;
+}
+.messages{
+    min-width: 33vw;
+    max-width: 33vw;
+}
+.room__main{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+}
+  }
+
+@media only screen and (min-width: 430.01px) and (max-width: 820px) {
+.room__main{
+    align-items: center;
+}
+  }
+
+  @media only screen and (max-width: 430px) {
+      .room__main{
+          justify-content: space-between;
+      }
+  .messages{
+    left: 0;
+    position: fixed;
+    overflow-y:auto;
+    z-index: 20;
+    min-width: 50vw;
+    max-width: 50vw;
+    
+    height: calc(100vh - 4rem);
+
+}
+.message__toggle__off{
+    position: fixed;
+    left: calc(50vw - 15px);
+    color: $myBlue;
+    font-weight: 600;
+    cursor: pointer;
+}
+  }

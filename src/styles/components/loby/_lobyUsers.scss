@@ -1,0 +1,33 @@
+.loby__users{
+    background: $myLightBlue;
+    h3{
+        padding: 0 1rem;
+    }
+    overflow-y: auto;
+    min-height: 100%; 
+}
+
+.user{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+display: flex;
+justify-content: space-between;
+    &:hover{
+        background: #ccc;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .loby{
+      width: 98%; 
+    }
+    
+}
+
+@media only screen and (max-height: 460px) {
+    .loby__users{
+      min-height: 100%; 
+    }
+    
+}

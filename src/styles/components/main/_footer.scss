@@ -1,0 +1,19 @@
+.footer{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $myBlue;
+    z-index: 100;
+
+    a {
+        @extend %a-nav
+    }
+}
+
+@media only screen and (max-height: 460px) {
+    .footer {
+      height: 2.5rem;
+    }
+  }

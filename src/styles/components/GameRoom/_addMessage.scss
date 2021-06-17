@@ -1,0 +1,46 @@
+.message-input{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% auto;
+
+    input{
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    button{
+        margin: 1rem;
+        padding: 0.5rem;
+        color: white;
+        background: $myBlue;
+        border:none;
+        border-radius: 5px;
+        &:hover{
+            background: $myLightBlue;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    form{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 430.01px)  and (max-width: 820px) {
+    .message-input{
+    input{
+        margin: 0.5rem;
+        margin-top: 0.125rem;
+        height: 0.75rem;
+        font-size: smaller;
+    }
+    button{
+        margin: 0;
+        margin-top: 0.125rem;
+        padding: 0;
+        font-size: smaller;
+        height: 1.25rem
+    }
+}
+}

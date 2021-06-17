@@ -1,0 +1,55 @@
+.message-user {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(100, 100, 100, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .message-user__body {
+    display: block;
+    width: 40%;
+    min-height: 30%;
+    border: 2px solid $myBlue;
+    border-radius: 5px;
+    background: white;
+    padding: 1rem;
+    text-align: center;
+  
+  
+    button {
+      border: none;
+      color: white;
+      margin: 1rem;
+      border-radius: 5px;
+      background: $myBlue;
+      padding: 0.5rem;
+  
+      &:hover {
+        background: $myLightBlue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cancel{
+    background: $myRed !important;
+  }
+
+  @media only screen and (max-width: 430px) {
+    .message-user {
+      align-items:flex-start;
+    }
+    .message-user__body {
+      width: 100%;
+      button{
+        width:100%;
+        margin: 0.5rem 0;
+      }
+    }
+  }

@@ -1,0 +1,76 @@
+.messages__button_container{
+    position: fixed;
+    top: 7.5rem;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  %messages__button_body{
+    position: relative;
+    height: 1.75rem;
+    width: 2.5rem;
+    border-radius: 5px;
+  }
+  
+  %pointer{
+    position: relative;
+    height: 15px;
+      width: 15px;
+    transform: rotate(45deg);
+      border-radius: 12px 0  0  0 ;
+  }
+  
+  
+  .messages__button{
+    @extend %messages__button_body;
+    background: $myBlue;
+    left: 0;
+    z-index: 35;
+  
+  }
+  
+  .messages__button__pointer {
+    @extend %pointer;
+    background: $myBlue;
+      margin: 0 auto;
+      left: 5px;
+    bottom: 12px;
+    z-index: 35;
+  }
+  
+  .messages__shadow__body{
+    @extend %messages__button_body;
+    z-index: 33;
+    left: 5px;
+    bottom: 45px;
+  }
+  
+  
+  .messages__shadow__pointer{
+    @extend %pointer;
+    margin: 0 auto;
+      left: 5px;
+    bottom: 50px;
+  }
+  
+  .blur{
+    background: grey ;
+      filter: blur(5px);
+  }
+  
+  .messages__button_counter{
+    top:12px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background: $myRed;
+    position: relative;
+    z-index: 36;
+    left: 22px;
+    color: white !important;
+    font-size: smaller;
+    text-align: center;
+    padding: 0.25rem;
+    font-weight: 700;
+    outline: $myYellow 2px solid;
+  }

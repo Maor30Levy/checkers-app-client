@@ -1,0 +1,25 @@
+.message {
+    margin: 1rem;
+    background: $myWhite;
+    border: 2px solid $myBlue;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+  }
+  
+.username {
+    font-weight: 700;
+    margin: 1rem;
+  }
+  
+.content {
+    margin: 1rem;
+    overflow-wrap:break-word;
+  }
+  
+.my-message {
+    @extend .message;
+    background: $myGreen;
+  }
+
+

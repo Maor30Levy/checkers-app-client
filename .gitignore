@@ -24,4 +24,4 @@ yarn-error.log*
 Dockerfile
 package-lock.json
 config
-.gitignore
+./.gitignore
